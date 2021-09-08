@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-const OverView: React.FC = () => {
+const OverView = () => {
     return (
         <Fragment>
             <div className="home">

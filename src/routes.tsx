@@ -2,7 +2,7 @@ import { lazy } from 'react'
 
 const routes = [
     {
-        name: 'HOME',
+        name: 'TOOL',
         path: '/',
         exact:true,
         ico:'home',
