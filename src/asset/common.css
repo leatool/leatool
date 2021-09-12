@@ -1,0 +1,139 @@
+@import './icon.css';
+#app {
+  height: 100vh;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input {
+  appearance: none !important;
+  -moz-appearance: textfield;
+}
+
+@keyframes initMove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sliderUp {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html {
+  background: #f4f4f4;
+}
+html::after {
+  background: linear-gradient(319.32deg, #EEEEEE 5.35%, #FAFAFA 90.87%);
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -2;
+}
+html::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  background-size: 1100px;
+  opacity: 0.09;
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.f {
+  display: flex;
+}
+.f-1 {
+  flex: 1;
+}
+.f-c {
+  display: flex;
+  align-items: center;
+}
+.f-c-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.f-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-c-c-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-input {
+  outline: none;
+  border: none;
+  font-size: 16px;
+}
+
+.button-link {
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.button-link:hover {
+  opacity: 0.4;
+}
+.button-link i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+.button-min {
+  padding: 6px 10px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.button-min:hover {
+  color: #fff;
+  background: #222;
+}
+
+/*# sourceMappingURL=common.css.map */

@@ -1,13 +1,25 @@
 import { lazy } from 'react'
+import conversion from './pages/conversion/index';
+import overView from './pages/overView/index';
 
-const routes = [
+interface router {
+    path:string,
+    component:any,
+    exact?:boolean,
+    children?:Array<router>
+}
+
+const routers:Array<router> =[
     {
-        name: 'TOOL',
         path: '/',
         exact:true,
-        ico:'home',
-        compontent: lazy(() => import('./pages/overView/index'))
+        component:  overView,
+    },
+    {
+        path: '/conversion',
+        exact:true,
+        component: conversion,
     }
 ]
 
-export default routes
+export default routers
