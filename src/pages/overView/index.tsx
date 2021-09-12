@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import './style.scss'
 
-const OverView = () => {
+export default function OverView() {
     return (
         <Fragment>
             <div className="home">
@@ -11,4 +11,3 @@ const OverView = () => {
     )
 }
 
-export default OverView;
