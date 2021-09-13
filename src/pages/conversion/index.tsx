@@ -19,7 +19,7 @@ export default class Conversion extends Component {
             return;
         }
 
-        var reg = new RegExp(/^[0-9]*$/);
+        var reg = new RegExp("^[0-9]*$");
         var ss:any = reg.exec(num);
         if (ss === null){
             this.setState({HexInputValue: "input err"});
@@ -37,7 +37,7 @@ export default class Conversion extends Component {
         }
         debugger
 
-        var reg = new RegExp(/0[xX][0-9a-fA-F]+/);
+        var reg = new RegExp("0[xX][0-9a-fA-F]+");
         var ss:any = reg.exec(hex);
         if (ss === null){
             this.setState({BigInputValue: "input err"});
