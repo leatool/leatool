@@ -19,7 +19,7 @@ export default class Conversion extends Component {
             return;
         }
 
-        var reg = new RegExp("^[1-9]\\d*|0$");
+        var reg = new RegExp("^[0-9]*$");
         var ss:any = reg.exec(num);
         if (ss === null){
             this.setState({HexInputValue: "input err"});
