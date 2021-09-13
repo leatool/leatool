@@ -37,7 +37,7 @@ export default class Conversion extends Component {
         }
         debugger
 
-        var reg = new RegExp("0x[0-9a-f]+/i");
+        var reg = new RegExp("0[xX][0-9a-fA-F]+");
         var ss:any = reg.exec(hex);
         if (ss === null){
             this.setState({BigInputValue: "input err"});
