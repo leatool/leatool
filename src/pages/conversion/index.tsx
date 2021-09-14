@@ -2,7 +2,6 @@ import React, {Component, Fragment} from 'react'
 import './style.scss'
 import Web3 from 'web3'
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
 
 const { numberToHex, hexToNumber } = Web3.utils
 
